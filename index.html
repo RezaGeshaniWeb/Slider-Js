@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Js &hearts;</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body>
+    <main id="main-bg" class="w-full h-screen bg-main bg-no-repeat bg-cover bg-center relative transition-all duration-500 ease-in-out flex items-center">
+        <section class="flex flex-col items-start gap-5 w-1/3 ml-12 animate-anime" id="main-content">
+            <h2 class="font-bold text-3xl text-white font-mono uppercase" id="title-slider">"Estrange Bond"</h2>
+            <p class="text-white text-sm w-[88%] font-mono">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam enim.</p>
+            <button class="border-2 border-white rounded-md text-white font-bold py-2 px-4 font-mono">Read More</button>
+        </section>
+        <section id="imgs" class="flex items-center gap-6 *:w-52 *:h-72 *:object-cover *:rounded-3xl *:transition-all *:duration-500 absolute top-1/2 left-1/2 translate-x-0 -translate-y-1/2 overflow-hidden">
+            <img src="img/2.jpg" alt="" class="shadow-2xl shadow-slate-800">
+            <img src="img/3.jpg" alt="" class="shadow-2xl shadow-slate-800">
+            <img src="img/4.jpg" alt="" class="shadow-2xl shadow-slate-800">
+            <img src="img/5.jpg" alt="" class="shadow-2xl shadow-slate-800">
+            <img src="img/6.jpg" alt="" class="shadow-2xl shadow-slate-800">
+            <img src="img/1.jpg" alt="" class="shadow-2xl shadow-slate-800">
+        </section>
+        <div class="flex items-center gap-4 absolute left-1/2 top-[90%] -translate-x-1/2 -translate-y-1/2">
+            <button id="prev" class="w-12 h-12 cursor-pointer bg-slate-300 rounded-full border border-slate-700 flex justify-center items-center hover:bg-slate-400 transition-all duration-200">
+                <i class="bi bi-arrow-left text-xl"></i>
+            </button>
+            <button id="next" class="w-12 h-12 cursor-pointer bg-slate-300 rounded-full border border-slate-700 flex justify-center items-center hover:bg-slate-400 transition-all duration-200">
+                <i class="bi bi-arrow-right text-xl"></i>
+            </button>
+        </div>
+        <!-- info -->
+        <div
+            class="w-44 h-[55px] hover:h-[185px] overflow-hidden transition-all duration-300 fixed top-0 left-0 p-5 text-center *:italic">
+            <strong class="text-lg text-white underline underline-offset-[6px]">Reza Geshani</strong>
+            <a class="text-slate-300 font-semibold my-2 flex justify-center hover:text-white"
+                href="https://www.linkedin.com/in/reza-geshani-web">Linkedin</a>
+            <a class="text-slate-300 font-semibold my-2 flex justify-center hover:text-white"
+                href="https://github.com/RezaGeshaniWeb/">Github</a>
+            <a class="text-slate-300 font-semibold my-2 flex justify-center hover:text-white"
+                href="https://www.instagram.com/rezageshani_web">Instagram</a>
+            <a class="text-slate-300 font-semibold my-2 flex justify-center hover:text-white"
+                href="mailto:rezageshaniweb@gmail.com">Email</a>
+        </div>
+        <!-- info -->
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
