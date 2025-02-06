@@ -22,25 +22,30 @@ function updateContent() {
     mainContent.classList.add('animate-anime')
 }
 
-nextBtn.addEventListener('click', () => {
+setInterval(nextImg, 4000)
+nextBtn.addEventListener('click', nextImg)
+
+function nextImg() {
     let firstImg = imgs.children[0]
     imgs.children[0].remove()
     imgs.append(firstImg)
-
+    
     imgIndex++
     if (imgIndex > imgArray.length - 1) imgIndex = 0
     updateContent()
-})
+}
 
-prevBtn.addEventListener('click', () => {
+prevBtn.addEventListener('click', prevImg)
+
+function prevImg() {
     let lastImg = imgs.children[imgs.children.length - 1]
     imgs.children[imgs.children.length - 1].remove()
     imgs.prepend(lastImg)
-
+    
     imgIndex--
     if (imgIndex < 0) imgIndex = imgArray.length - 1
     updateContent()
-})
+}
 
 mainContent.addEventListener('animationend', () => {
     mainContent.classList.remove('animate-anime')
