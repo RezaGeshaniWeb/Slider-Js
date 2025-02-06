@@ -22,7 +22,6 @@ function updateContent() {
     mainContent.classList.add('animate-anime')
 }
 
-setInterval(nextImg, 5000)
 nextBtn.addEventListener('click', nextImg)
 
 function nextImg() {
